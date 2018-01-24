@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113086304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113086304-1');
+    </script>
+
+    <title>Dexin Wang--iWatch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/site.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src='javascript/slidetounlock.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            setInterval( function() {
+                var seconds = new Date().getSeconds();
+                var sdegree = seconds * 6;
+                var srotate = "rotate(" + sdegree + "deg)";
+
+                $("#sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});}, 1000 );
+
+                setInterval( function() {
+                var hours = new Date().getHours();
+                var mins = new Date().getMinutes();
+                var hdegree = hours * 30 + (mins / 2);
+                var hrotate = "rotate(" + hdegree + "deg)";
+
+                $("#hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+                }, 1000 );
+                setInterval( function() {
+                var mins = new Date().getMinutes();
+                var mdegree = mins * 6;
+                var mrotate = "rotate(" + mdegree + "deg)";
+                $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
+                }, 1000 );
+        });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html#">Dexin Wang</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active navbar-manue"><a href="index.html"> Home </a></li>
+            <li class="navbar-manue-last"><a href="cv.html"> Resume </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container topspacer">
+      <div class="row">
+        <div class="clock-center">
+          <ul id="clock">
+            <li id="watchpoint"></li>
+            <li id="sec"></li>
+            <li id="hour"></li>
+            <li id="min"></li>
+          </ul>
+
+          <div id="well">
+            <div class="unlock-content"><strong id="slider"></strong> <span>Slide to unlock</span></div>
+          </div>
+
+          <div class="clock-menu-lists">
+
+            <div class="ch-grid-top-first">
+              <ul class="ch-grid">
+
+                <li class="li-img-sm">
+                  <a href="index.html" target="_blank">
+                    <div class="ch-item ch-img-home">
+                      <div class="ch-info-wrap">
+                        <div class="ch-info">
+                          <div class="ch-info-front ch-img-home"></div>
+                          <div class="ch-info-back">
+                            <div class="content">Home</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="li-img-sm">
+                  <a href="./cv.html" target="_blank">
+                    <div class="ch-item ch-img-resume">
+                      <div class="ch-info-wrap">
+                        <div class="ch-info">
+                          <div class="ch-info-front ch-img-resume"></div>
+                          <div class="ch-info-back">
+                            <div class="content">Resume</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ch-grid-top">
+              <ul class="ch-grid">
+                <li class="li-img-md">
+                  <a href="https://github.com/DexDexinWang" target="_blank">
+                    <div class="ch-item ch-img-github">
+                      <div class="ch-info-wrap">
+                        <div class="ch-info">
+                          <div class="ch-info-front ch-img-github"></div>
+                          <div class="ch-info-back">
+                            <div class="content">GitHub</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="li-img-lg">
+                  <a href="https://www.linkedin.com/in/DexDexinWang/" target="_blank">
+                    <div class="ch-item ch-img-linkedin">
+                      <div class="ch-info-wrap">
+                        <div class="ch-info">
+                          <div class="ch-info-front ch-img-linkedin"></div>
+                          <div class="ch-info-back">
+                            <div class="content">Linkedin</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="li-img-md">
+                  <a href="https://www.facebook.com/DexWang2012" target="_blank">
+                    <div class="ch-item ch-img-facebook">
+                      <div class="ch-info-wrap">
+                        <div class="ch-info">
+                          <div class="ch-info-front ch-img-facebook"></div>
+                          <div class="ch-info-back">
+                            <div class="content">Facebook</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ch-grid-middle">
+             <ul class="ch-grid">
+              <li class="li-img-md">
+                <a href="https://www.google.com/maps/place/650+Harry+Rd,+San+Jose,+CA+95120/@37.2107333,-121.8070118,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x808e30207efccfe7:0xa6653f3fe1394caa!2s650+Harry+Rd,+San+Jose,+CA+95120!3b1!3m1!1s0x808e30207efccfe7:0xa6653f3fe1394caa" target="_blank">
+                  <div class="ch-item ch-img-googlemap">
+                    <div class="ch-info-wrap">
+                      <div class="ch-info">
+                        <div class="ch-info-front ch-img-googlemap"></div>
+                        <div class="ch-info-back">
+                          <div class="content">Google Map</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="li-img-lg">
+                <a href="mailto:edgar.wdx@gmail.com" target="_blank">
+                  <div class="ch-item ch-img-email">
+                    <div class="ch-info-wrap">
+                      <div class="ch-info">
+                        <div class="ch-info-front ch-img-email"></div>
+                        <div class="ch-info-back">
+                          <div class="content">Email</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="li-img-lg">
+                <a href="tel:1-541-954-8745" target="_blank">
+                  <div class="ch-item ch-img-phone">
+                    <div class="ch-info-wrap">
+                      <div class="ch-info">
+                        <div class="ch-info-front ch-img-phone"></div>
+                        <div class="ch-info-back">
+                          <div class="content">Phone</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="li-img-md">
+                <a href="skype:edgar_wdx?call" target="_blank">
+                  <div class="ch-item ch-img-skype">
+                    <div class="ch-info-wrap">
+                      <div class="ch-info">
+                        <div class="ch-info-front ch-img-skype"></div>
+                        <div class="ch-info-back">
+                          <div class="content">Skype</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+             </ul>
+            </div>
+
+
+            <div class="ch-grid-bottom">
+                <ul class="ch-grid">
+
+                  <li class="li-img-md">
+                    <a href="Resume Full Stack From Dexin Wang.pdf" target="_blank">
+                      <div class="ch-item ch-img-pdf">
+                        <div class="ch-info-wrap">
+                          <div class="ch-info">
+                            <div class="ch-info-front ch-img-pdf"></div>
+                            <div class="ch-info-back">
+                              <div class="content">CV</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="li-img-lg">
+                  <a href="cv.html" target="_blank">
+                    <div class="ch-item ch-img-projects">
+                      <div class="ch-info-wrap">
+                        <div class="ch-info">
+                          <div class="ch-info-front ch-img-projects"></div>
+                          <div class="ch-info-back">
+                            <div class="content">Projects</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="li-img-md">
+                         <a href="cv.html" target="_blank">
+                    <div class="ch-item ch-img-aboutme">
+                      <div class="ch-info-wrap">
+                        <div class="ch-info">
+                          <div class="ch-info-front ch-img-aboutme"></div>
+                          <div class="ch-info-back">
+                            <div class="content">About</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                </ul>
+              </div>
+
+              <div class="ch-grid-bottom-last">
+                <ul class="ch-grid">
+                  <li class="li-img-sm">
+                            <a href="cv.html" target="_blank">
+                      <div class="ch-item ch-img-contactme">
+                        <div class="ch-info-wrap">
+                          <div class="ch-info">
+                            <div class="ch-info-front ch-img-contactme"></div>
+                            <div class="ch-info-back">
+                              <div class="content">Contact</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="li-img-sm">
+                    <a href="cv.html" target="_blank">
+                      <div class="ch-item ch-img-pinterest">
+                        <div class="ch-info-wrap">
+                          <div class="ch-info">
+                            <div class="ch-info-front ch-img-pinterest"></div>
+                            <div class="ch-info-back">
+                              <div class="content">Pinterest</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="center">
+          <hr>
+          <p class="text-center">© Copyright 2017 Dexin Wang</p>
+      </div>
+    </footer>
+  </body>
+</html>
