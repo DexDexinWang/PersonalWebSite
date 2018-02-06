@@ -603,29 +603,29 @@ footer {
 		background-size: contain;
 	}
 
-	.ch-img-projects {
-		background-image: url(../images/projects.png);
-		font-size: 8px;
+	.ch-img-ticketman {
+		background-image: url(../images/ticket.png);
+		font-size: 7px;
 		background-size: contain;
 	}
 
-	.ch-img-aboutme {
-		background-image: url(../images/aboutme.png);
-		font-size: 10px;
-		background-size: contain;
-	}
-
-
-	.ch-img-contactme {
-		background-image: url(../images/contact.png);
-		font-size: 6px;
+	.ch-img-nbareport {
+		background-image: url(../images/nba.png);
+		font-size: 13px;
 		background-size: contain;
 	}
 
 
-	.ch-img-pinterest {
-		font-size: 5px;
-		background-image: url(../images/pinterest-icon.png);
+	.ch-img-android {
+		background-image: url(../images/android.png);
+		font-size: 11px;
+		background-size: contain;
+	}
+
+
+	.ch-img-machinelearning {
+		font-size: 11px;
+		background-image: url(../images/ai.png);
 		background-size: contain;
 	}
 
