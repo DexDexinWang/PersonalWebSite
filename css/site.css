@@ -597,6 +597,13 @@ footer {
 		font-size: 8px;
 		background-size: contain;
 	}
+
+	.ch-img-leetcode {
+		background-image: url(../images/leetcode.png);
+		font-size: 8px;
+		background-size: contain;
+	}
+
 	.ch-img-pdf {
 		background-image: url(../images/pdf.png);
 		font-size: 8px;
