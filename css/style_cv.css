@@ -175,3 +175,29 @@ a:hover, a:active {
 	font-size: 16px;
 	margin-left: 40px;
 }
+
+.job_entry {
+  margin-bottom: 30px;
+}
+
+.li_title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+.li_year {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.li_team {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.li_description p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
